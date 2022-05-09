@@ -1,0 +1,7 @@
+21:49:24.391 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x981cf313ac4ea42c
+21:49:35.336 [main] INFO  academy.validateTitle - Driver initialized
+21:49:37.347 [main] INFO  academy.validateTitle - Navigate to home page
+21:49:40.527 [main] INFO  academy.validateNavigationBar - Success navigation bar displayed
+21:49:40.595 [main] INFO  academy.validateTitle - Success validate text message
+21:49:48.343 [main] INFO  academy.homepage - Unrestricted
+21:50:03.883 [main] INFO  academy.homepage - Restricted

@@ -1,0 +1,5 @@
+20:52:33.581 [TestNG-tests-1] INFO  academy.validateNavigationBar - Success navigation bar displayed
+20:52:33.604 [AsyncHttpClient-1-8] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+20:52:33.638 [TestNG-tests-2] INFO  academy.validateTitle - Success validate header text
+20:52:33.640 [AsyncHttpClient-1-9] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+20:52:35.006 [TestNG-tests-3] INFO  academy.homepage - Unrestricted

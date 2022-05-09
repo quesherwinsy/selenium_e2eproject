@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--NOTE include this in the project configure build path-->
+<Configuration status="WARN">
+	<!--Location of the log file in source level-->
+	<Properties>
+		<Property name="basePath">./logs</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="File" fileName="${basePath}/prints.log" filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="500" />
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<!--Demo1 java class will log errors only-->
+		<!--additivity false means log will display once-->
+		<!--Logger name="alpha.Demo1" level="error" additivity="false"-->
+		<!--AppenderRef ref="Console" /-->
+		<!--AppenderRef ref="File" /-->
+		<!--/Logger-->
+
+		<!--root level trace will print all log for All other java class-->
+		<!--root level error will print all error only-->
+		<Root level="trace">
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>

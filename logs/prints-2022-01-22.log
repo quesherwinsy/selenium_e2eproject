@@ -1,0 +1,5 @@
+21:45:17.880 [AsyncHttpClient-1-9] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+21:45:18.948 [AsyncHttpClient-1-8] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+21:45:19.214 [TestNG-tests-3] INFO  academy.homepage - Unrestricted
+21:45:31.460 [TestNG-tests-3] INFO  academy.homepage - Restricted
+21:45:38.971 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.PoolThreadCache - Freed 14 thread-local buffer(s) from thread: AsyncHttpClient-1-2

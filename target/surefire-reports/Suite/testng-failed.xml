@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="academy.Listeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Check navigation bar visibility(failed)" parallel="tests">
+    <classes>
+      <class name="academy.validateNavigationBar">
+        <methods>
+          <include name="initiateBrowser"/>
+          <include name="basePageNavigation"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- academy.validateNavigationBar -->
+    </classes>
+  </test> <!-- Check navigation bar visibility(failed) -->
+  <test thread-count="5" verbose="0" name="Validate usernames(failed)" parallel="tests">
+    <classes>
+      <class name="academy.homepage">
+        <methods>
+          <include name="initiateBrowser"/>
+          <include name="endTest"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- academy.homepage -->
+    </classes>
+  </test> <!-- Validate usernames(failed) -->
+  <test thread-count="5" verbose="0" name="Validate title in page(failed)" parallel="tests">
+    <classes>
+      <class name="academy.validateTitle">
+        <methods>
+          <include name="validateHeader"/>
+          <include name="initiateBrowser"/>
+          <include name="validateAppTitle"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- academy.validateTitle -->
+    </classes>
+  </test> <!-- Validate title in page(failed) -->
+</suite> <!-- Failed suite [Suite] -->
