@@ -12,7 +12,9 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 //feature = path of feature file
 //glue = path of step definition file
-@CucumberOptions(features = "src/test/java/feature", glue = "stepDefinitions")
+//tags = specify @test definition to run
+//plugin = specify type of output and path
+@CucumberOptions(features = "src/test/java/feature", glue = "stepDefinitions", tags = "@Guru99Test1")
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 }

@@ -35,16 +35,17 @@ public class base {
 
 		// Get value of browser
 		// String browserName = prop.getProperty("browser");
-		
-		
+
 		// NOTE: use with Cucumber run via Eclipse IDE only
-		browserName="chrome";
-		
+		browserName = "chrome";
+
 		if (browserName.contains("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
 			// Chrome option object to make browser headless mode
 			ChromeOptions coptions = new ChromeOptions();
+			coptions.addArguments("--ignore-ssl-errors=yes");
+			coptions.addArguments("--ignore-certificate-errors");
 			if (browserName.contains("headless")) {
 				coptions.addArguments("headless");
 			}
